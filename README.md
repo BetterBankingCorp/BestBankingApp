@@ -52,4 +52,12 @@
   Spring
   Angular
   
+  <h1> Development Timeline: </h1>
+  
+  <h2> Day One: </h2>
+  Create Team Organization on Github <br>
+  Initialize Git Repository <br>
+  Initialize Maven Project with Spring Dependencies <br>
+  Establish the architecture of Front End and Back End <br>
+  
   </body>
