@@ -22,5 +22,34 @@
   <h1> Project Rundown: </h1>
   
   Welcome to Better Banking Corp! Our sophisticated system allows our customers to complete basic banking functions such as withdraw, deposit, retrieve balance and more!
+ 
+  <h1> Project Tools: </h1>
+  
+  Eclipse
+  <br>
+  Spring Initializer
+  <br>
+  VSCode
+  <br>
+  MySQL
+  
+  <h1> Programming Languages: </h1>
+  
+  Java
+  <br>
+  HTML
+  <br>
+  CSS
+  <br>
+  JavaScript
+  <br>
+  Typescript
+  <br>
+  JSON
+  
+  <h1> Frameworks: </h1>
+  
+  Spring
+  Angular
   
   </body>
