@@ -65,7 +65,7 @@
   Rehna will work on the service class (backend) <br>
   Raymond will establish front end architecture (application elements) <br>
   Sushil and Shane began creating the AWS environment and end points <br>
-  Chelsea lead stand up and asisted on creating front-end design
+  Chelsea lead stand up and asist on creating front-end design
   
   
   </body>
