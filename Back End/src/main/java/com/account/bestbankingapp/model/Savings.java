@@ -15,7 +15,7 @@ public class Savings extends Account implements IBaseRate {
 
 	public Savings(String name, String ssn, double balance) {
 		super(name, ssn, balance);
-		accountNumber = "1" + accountNumber;
+		accountNum = "1" + accountNum;
 		this.rate = rate;
 	}
 
