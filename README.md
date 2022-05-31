@@ -4,7 +4,7 @@
 <body>
   <h1> Meet The Team: </h1>
  
-  Business Analyst- Chelsea Cole
+  Business Analyst/Tech Lead/Front End- Chelsea Cole
   <br>
   Back End Architect- David Toribio
   <br>
@@ -14,7 +14,7 @@
   <br>
   Full Stack Developer- Rehna 
   <br>
-  Quality Assurance/Full Stack Developer - Sushil
+  AWS/Quality Assurance/Full Stack Developer - Sushil
   <br>
   Full Stack Developer- Bailey Patt
   
@@ -55,9 +55,17 @@
   <h1> Development Timeline: </h1>
   
   <h2> Day One: </h2>
-  Create Team Organization on Github <br>
-  Initialize Git Repository <br>
+  Created Team Organization on Github <br>
+  Initialized Git Repository <br>
   Initialize Maven Project with Spring Dependencies <br>
   Establish the architecture of Front End and Back End <br>
+  
+  <h2> Day Two: </h2>
+  David pushed (back end architecture(classes, packages, getters & setters) weekend code to repository
+  Rehna will work on the service class (backend)
+  Raymond will establish front end architecture (application elements)
+  Sushil and Shane began creating the AWS environment and end points
+  Chelsea lead stand up and asisted on creating front-end design
+  
   
   </body>
