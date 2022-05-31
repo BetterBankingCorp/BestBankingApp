@@ -18,7 +18,7 @@ public class Checking extends Account {
 
 	public Checking(String name, String SSN, double initDeposit) {
 		super(name, SSN, initDeposit);
-		accountNumber = "2" + accountNumber;
+		accountNum = "2" + accountNum;
 		setDebitCard();
 	}
 
