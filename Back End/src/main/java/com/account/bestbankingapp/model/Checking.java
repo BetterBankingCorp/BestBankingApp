@@ -6,48 +6,31 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "account")
-
 public class Checking extends Account {
-	
-		@Column(name = "debitCardNumber")
-		private long debitCardNumber;
-		@Column(name = "debitCardPin")
-		private int debitCardPin;
-		
-		public Checking() {
-			
-		}
-		
-		public Checking(String name, String ssn, double balance, double rate, String accountNum, long debitCardNumber,
-				int debitCardPin) {
-			super(name, ssn, balance, rate, accountNum);
-			this.debitCardNumber = debitCardNumber;
-			this.debitCardPin = debitCardPin;
-		}
 
-		public long getDebitCardNumber() {
-			return debitCardNumber;
-		}
+	@Column
+	private long debitCardNumber;
+	@Column
+	private int debitCardPin;
 
-		public void setDebitCardNumber(long debitCardNumber) {
-			this.debitCardNumber = debitCardNumber;
-		}
+	public Checking() {
+	}
 
-		public int getDebitCardPin() {
-			return debitCardPin;
-		}
+	public Checking(String name, String SSN, double initDeposit) {
+		super(name, SSN, initDeposit);
+		accountNumber = "2" + accountNumber;
+		setDebitCard();
+	}
 
-		public void setDebitCardPin(int debitCardPin) {
-			this.debitCardPin = debitCardPin;
-		}
+	private void setDebitCard() {
+		debitCardNumber = (int) (Math.random() * Math.pow(10, 12));
+		debitCardPIN = (int) (Math.random() * Math.pow(10, 4));
+	}
 
-		@Override
-		public String toString() {
-			return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPin + ", rate=" + rate
-					+ ", accountNum=" + accountNum + "]";
-		}
-		
-		
+	@Override
+	public String toString() {
+		return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPin + ", rate=" + rate
+				+ ", accountNum=" + accountNum + "]";
+	}
 
 }
