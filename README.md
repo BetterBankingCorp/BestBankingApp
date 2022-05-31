@@ -4,7 +4,7 @@
 <body>
   <h1> Meet The Team: </h1>
  
-  Business Analyst/Tech Lead/Front End- Chelsea Cole
+  Business Analyst/Tech Lead- Chelsea Cole
   <br>
   Back End Architect- David Toribio
   <br>
@@ -63,9 +63,9 @@
   <h2> Day Two: </h2>
   David pushed (back end architecture(classes, packages, getters & setters) weekend code to repository <br>
   Rehna will work on the service class (backend) <br>
-  Raymond will establish front end architecture (application elements) <br>
+  Raymond will establish front end architecture (application elements) / made updates to back end model classes <br>
   Sushil and Shane began creating the AWS environment and end points <br>
-  Chelsea lead stand up and asist on creating front-end design
+  Chelsea lead stand up and assist on code reviews
   
   
   </body>
