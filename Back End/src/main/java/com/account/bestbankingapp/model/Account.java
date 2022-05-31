@@ -39,40 +39,12 @@ public abstract class Account {
 		return ssn;
 	}
 
-	public void setSsn(String ssn) {
-		this.ssn = ssn;
-	}
-
 	public double getBalance() {
 		return balance;
 	}
 
-	public void setBalance(double balance) {
-		this.balance = balance;
-	}
-
-	public double getRate() {
-		return rate;
-	}
-
-	public void setRate(double rate) {
-		this.rate = rate;
-	}
-
 	public String getAccountNum() {
 		return accountNum;
-	}
-
-	public void setAccountNum(String accountNum) {
-		this.accountNum = accountNum;
-	}
-
-	public static int getIndex() {
-		return index;
-	}
-
-	public static void setIndex(int index) {
-		Account.index = index;
 	}
 
 	// Constructors
