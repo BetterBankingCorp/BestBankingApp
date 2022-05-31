@@ -11,7 +11,7 @@ public class Checking extends Account {
 	@Column
 	private long debitCardNumber;
 	@Column
-	private int debitCardPin;
+	private int debitCardPIN;
 
 	public Checking() {
 	}
@@ -29,8 +29,8 @@ public class Checking extends Account {
 
 	@Override
 	public String toString() {
-		return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPin + ", rate=" + rate
-				+ ", accountNum=" + accountNum + "]";
+		return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPIN + 
+				 ", accountNum=" + accountNum + "]";
 	}
 
 }

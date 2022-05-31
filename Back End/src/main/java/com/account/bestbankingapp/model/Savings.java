@@ -16,13 +16,13 @@ public class Savings extends Account implements IBaseRate {
 	public Savings(String name, String ssn, double balance) {
 		super(name, ssn, balance);
 		accountNum = "1" + accountNum;
+		
 		this.rate = rate;
 	}
 
 	@Override
 	public String toString() {
-		return "Savings [safetyDepositBoxID=" + safetyDepositBoxID + ", safetyDepositBoxKey=" + safetyDepositBoxKey
-				+ ", rate=" + rate + ", accountNum=" + accountNum + "]";
+		return "Savings [rate = " + rate + " , accountNum = " + "]";
 	}
 
 }

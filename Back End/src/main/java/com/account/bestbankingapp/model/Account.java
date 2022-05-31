@@ -16,9 +16,9 @@ public abstract class Account {
 
 	// Attributes
 	@Column
-	private String ssn;
+	private String SSN;
 	@Column
-	private long accountNum;
+	protected String accountNum;
 	@Column
 	private double balance;
 	@Column
@@ -36,7 +36,7 @@ public abstract class Account {
 	}
 
 	public String getSsn() {
-		return ssn;
+		return SSN;
 	}
 
 	public double getBalance() {
@@ -54,27 +54,18 @@ public abstract class Account {
 		balance = initDeposit;
 
 		index++;
-		this.accountNumber = setAccountNumber();
-
-		setRate();
+		this.accountNum = setAccountNumber();
 	}
 
-	public Account() {
-
-	}
+	public Account() { }
 
 	// Determines each person's account number
-	private long setAccountNumber() {
+	private String setAccountNumber() {
 		String lastTwoOfSSN = SSN.substring(SSN.length() - 2, SSN.length());
 		int uniqueID = index;
 		int randomNumber = (int) (Math.random() * Math.pow(10, 3));
 		return lastTwoOfSSN + uniqueID + randomNumber;
 	}
 
-	@Override
-	public String toString() {
-		return "Account [name=" + name + ", ssn=" + ssn + ", balance=" + balance + ", rate=" + rate + ", accountNum="
-				+ accountNum + "]";
-	}
 
 }
