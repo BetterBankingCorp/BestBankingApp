@@ -61,10 +61,10 @@
   Establish the architecture of Front End and Back End <br>
   
   <h2> Day Two: </h2>
-  David pushed (back end architecture(classes, packages, getters & setters) weekend code to repository
-  Rehna will work on the service class (backend)
-  Raymond will establish front end architecture (application elements)
-  Sushil and Shane began creating the AWS environment and end points
+  David pushed (back end architecture(classes, packages, getters & setters) weekend code to repository <br>
+  Rehna will work on the service class (backend) <br>
+  Raymond will establish front end architecture (application elements) <br>
+  Sushil and Shane began creating the AWS environment and end points <br>
   Chelsea lead stand up and asisted on creating front-end design
   
   
