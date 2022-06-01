@@ -10,5 +10,8 @@ import com.account.bestbankingapp.model.Account;
 
 @Repository
 public interface BestBankingAppRespository extends JpaRepository <Account, Long>{
+@Query("select per.id,per.name from Account per")
+	
+	public List<Account> getList();
 
 }

@@ -9,37 +9,37 @@ import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.repository.BestBankingAppRespository;
 import java.util.List;
 
-@Service
-public class BestBankingAppService {
-	@Autowired
-	BestBankingAppRespository accountRepository;
+public class BestBankingAppService extends Account {
 
-	//create savings account
-	public Savings createSavingsAccount(Savings savingsAccount) {
-		savingsAccount.setAccountNum("Savings-" + savingsAccount.getNextAccountNumber());
-		return accountRepository.save(savingsAccount);
-	}
-	//create checking account
-	public Checking createCheckingAccount(Checking checkingAccount) {
-		checkingAccount.setAccountNum("Checking-" + checkingAccount.getNextAccountNumber());
-		return accountRepository.save(checkingAccount);
-	}
-	
-	//read accounts
-	public List<Account> getAccounts() {
-	    return accountRepository.findAll();
-	}
-	//delete accounts
-	public void deleteAccount(Long id) {
-		accountRepository.deleteById(id);
-	}
-	//update account
-	
-	public Account updateAccount(Long id, Account accountDetails) {
-		Account account = accountRepository.findById(id).get();
-		account.setName(accountDetails.getName());
-		account.setSsn(accountDetails.getSsn());
-		account.setBalance(accountDetails.getBalance());	        
-	        return accountRepository.save(account);                                
-	}
+@Autowired
+BestBankingAppRespository bankrepository;
+
+//create savings account
+public Account createSavingsAccount(Savings savingsAccount) {
+return bankrepository.save(savingsAccount);
+}
+//create checking account
+public Account createCheckingAccount(Savings checkingAccount) {
+return bankrepository.save(checkingAccount);
+}
+//read accounts
+public List<Account> getAccounts(){
+return bankrepository.findAll();
+}
+//delete accounts
+public void deleteAccounts(Long Id) {
+bankrepository.deleteById(Id);
+}
+//update account
+public Account updateAccount(Long Id, Account newAccount) {
+Account account=bankrepository.getById(Id);
+account.setAccountNum(newAccount.getAccountNum());
+return bankrepository.save(account);
+}
+//patch account
+public Account updateAccountName(Long Id, String newAccountName) {
+Account account=bankrepository.getById(Id);
+account.setName(newAccountName);
+return bankrepository.save(account);
+}
 }
