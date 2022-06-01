@@ -13,7 +13,7 @@ public abstract class Account {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-
+	protected String name;
 	// Attributes
 	@Column
 	private String SSN;
@@ -21,8 +21,6 @@ public abstract class Account {
 	protected String accountNum;
 	@Column
 	private double balance;
-	@Column
-	protected String name;
 	@Column
 	private static int index = 10000;
 
@@ -46,6 +44,11 @@ public abstract class Account {
 	public String getAccountNum() {
 		return accountNum;
 	}
+	
+
+	public void setAccountNum(String accountNum) {
+		this.accountNum = accountNum;
+	}
 
 	// Constructors
 	public Account(String name, String SSN, double initDeposit) {
@@ -66,6 +69,5 @@ public abstract class Account {
 		int randomNumber = (int) (Math.random() * Math.pow(10, 3));
 		return lastTwoOfSSN + uniqueID + randomNumber;
 	}
-
 
 }

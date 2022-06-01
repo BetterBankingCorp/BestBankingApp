@@ -8,6 +8,7 @@ import com.account.bestbankingapp.model.IBaseRate;
 import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.repository.BestBankingAppRespository;
 import java.util.List;
+import java.util.Optional;
 
 public class BestBankingAppService extends Account {
 
@@ -19,7 +20,7 @@ public Account createSavingsAccount(Savings savingsAccount) {
 return bankrepository.save(savingsAccount);
 }
 //create checking account
-public Account createCheckingAccount(Savings checkingAccount) {
+public Account createCheckingAccount(Checking checkingAccount) {
 return bankrepository.save(checkingAccount);
 }
 //read accounts
@@ -27,18 +28,18 @@ public List<Account> getAccounts(){
 return bankrepository.findAll();
 }
 //delete accounts
-public void deleteAccounts(Long Id) {
-bankrepository.deleteById(Id);
+public void deleteAccounts(String name) {
+bankrepository.deleteById(name);
 }
 //update account
-public Account updateAccount(Long Id, Account newAccount) {
-Account account=bankrepository.getById(Id);
+public Account updateAccount(String name, Account newAccount) {
+Account account= bankrepository.findById(name).get();
 account.setAccountNum(newAccount.getAccountNum());
 return bankrepository.save(account);
 }
 //patch account
-public Account updateAccountName(Long Id, String newAccountName) {
-Account account=bankrepository.getById(Id);
+public Account updateAccountName(String name, String newAccountName) {
+Account account=bankrepository.findById(name).get();
 account.setName(newAccountName);
 return bankrepository.save(account);
 }
