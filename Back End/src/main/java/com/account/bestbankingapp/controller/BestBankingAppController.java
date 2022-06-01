@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.account.bestbankingapp.model.Account;
@@ -18,49 +19,37 @@ import com.account.bestbankingapp.model.Checking;
 import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.service.BestBankingAppService;
 
-//update
-//controller
 @RestController
-@RequestMapping("/Best_BankingApp")
+@RequestMapping("/api")
 public class BestBankingAppController {
 	@Autowired
-    BestBankingAppService bestBankingAppService;
+    BestBankingAppService accountService;
+	
+	@RequestMapping(value="/accounts/savings", method=RequestMethod.POST)
+	public Savings createSavings(@RequestBody Savings savingsAccount) {
+	    return accountService.createSavingsAccount(savingsAccount);
+	}
+	
+	@RequestMapping(value="/accounts/checking", method=RequestMethod.POST)
+	public Checking createChecking(@RequestBody Checking checkingAccount) {
+	    return accountService.createCheckingAccount(checkingAccount);
+	}
+	
+	@RequestMapping(value="/accounts", method=RequestMethod.GET)
+	public List<Account> readAccounts() {
+	    return accountService.getAccounts();
+	}
+	
+	@RequestMapping(value="/accounts/{accountId}", method=RequestMethod.DELETE)
+	public void deleteAccount(@PathVariable(value = "accountId") Long id) {
+		accountService.deleteAccount(id);
+	}
+	@RequestMapping(value="/accounts/{accountId}", method=RequestMethod.PUT)
+	public Account readAccounts(@PathVariable(value = "accountId") Long id, @RequestBody Account accountDetails) {
+	    return accountService.updateAccount(id, accountDetails);
+	}
+	
 
-	//CREATE CHECKING ENTRY
-    @PostMapping("/add-checking")
-    public Account createChecking(@RequestBody Checking checking) {
-   	 return bestBankingAppService.createCheckingAccount(checking);
-    }
-  //CREATE SAVINGS ENTRY
-    @PostMapping("/add-savings")
-    public Account createSavings(@RequestBody Savings savings) {
-   	 return bestBankingAppService.createSavingsAccount(savings);
-	    }
-    //READ ACCOUNTS
-    @GetMapping("/read-all")
-    public List<Account> readAccount() {
-        return bestBankingAppService.getAccounts(); //uncertain
-    }
-    //UPDATE ACCOUNT
-    @PutMapping("/update/{id}")
-    public Account updateAccount(@PathVariable(value="id") String name, @RequestBody Account accountsInfo) {
-   	 return bestBankingAppService.updateAccount(name, accountsInfo);
-    }
-    //DELETE ACCOUNT
-    @DeleteMapping("/delete/{id}")
-    public void deleteAccount(@PathVariable(value="id") String name) {
-    	bestBankingAppService.deleteAccounts(name);	
-    }
-    //PATCH ACCOUNT NAME
-    @PatchMapping("/update-name/{id}/{name}")
-    public Account patchAccountName(@PathVariable(value = "name") String name) {
-    	return bestBankingAppService.updateAccountName(name, name);
-    }
-    /*
-  //PATCH CONTACT NAME
-   @PatchMapping("/update-number/{id}/{number}")
-   Account patchAccountNumber(@PathVariable(value = "id") Long id, @PathVariable(value = "number") Account number) {
-    }
-    */
 }
+
 
