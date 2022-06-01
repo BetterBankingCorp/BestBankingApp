@@ -10,6 +10,7 @@ import com.account.bestbankingapp.repository.BestBankingAppRespository;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class BestBankingAppService extends Account {
 
 @Autowired

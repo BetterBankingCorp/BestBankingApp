@@ -56,9 +56,11 @@ public class BestBankingAppController {
     public Account patchAccountName(@PathVariable(value = "name") String name) {
     	return bestBankingAppService.updateAccountName(name, name);
     }
+    /*
   //PATCH CONTACT NAME
    @PatchMapping("/update-number/{id}/{number}")
    Account patchAccountNumber(@PathVariable(value = "id") Long id, @PathVariable(value = "number") Account number) {
     }
+    */
 }
 
