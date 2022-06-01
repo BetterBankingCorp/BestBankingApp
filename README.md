@@ -61,11 +61,17 @@
   Establish the architecture of Front End and Back End <br>
   
   <h2> Day Two: </h2>
-  David pushed (back end architecture(classes, packages, getters & setters) weekend code to repository <br>
-  Rehna will work on the service class (backend) <br>
-  Raymond will establish front end architecture (application elements) / made updates to back end model classes <br>
-  Sushil and Shane began creating the AWS environment and end points <br>
-  Chelsea lead stand up and assist on code reviews
+  Completed Controller class <br>
+  Completed structure of Service class (backend) <br>
+  Defined front end architecture (application componenets) <br>
+  Made updates to back end model classes <br>
+  Began creating the AWS environment and end points <br>
+  
+  <h2> Day Three: </h2>
+  Made adjustments to CRUD operations <br>
+  Connected Back End to MySQL Database <br>
+  Implemented functionality to Front End <br>
+  
   
   
   </body>
