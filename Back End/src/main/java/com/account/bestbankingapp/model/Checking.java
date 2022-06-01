@@ -5,32 +5,52 @@ import javax.persistence.DiscriminatorColumn;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import com.account.bestbankingapp.model.Account;
+
 @Entity
+@Table(name = "account")
+
 public class Checking extends Account {
+	
+		@Column(name = "debitCardNumber")
+		private long debitCardNumber;
+		@Column(name = "debitCardPin")
+		private int debitCardPin;
+		
+		public Checking() {
+			
+		}
+		
+		public Checking(String name, String ssn, double balance, double rate, String accountNum, long debitCardNumber,
+				int debitCardPin) {
+			super(name, ssn, balance, rate, accountNum);
+			this.debitCardNumber = debitCardNumber;
+			this.debitCardPin = debitCardPin;
+		}
 
-	@Column
-	private long debitCardNumber;
-	@Column
-	private int debitCardPIN;
+		public long getDebitCardNumber() {
+			return debitCardNumber;
+		}
 
-	public Checking() {
-	}
+		public void setDebitCardNumber(long debitCardNumber) {
+			this.debitCardNumber = debitCardNumber;
+		}
 
-	public Checking(String name, String SSN, double initDeposit) {
-		super(name, SSN, initDeposit);
-		accountNum = "2" + accountNum;
-		setDebitCard();
-	}
+		public int getDebitCardPin() {
+			return debitCardPin;
+		}
 
-	private void setDebitCard() {
-		debitCardNumber = (int) (Math.random() * Math.pow(10, 12));
-		debitCardPIN = (int) (Math.random() * Math.pow(10, 4));
-	}
+		public void setDebitCardPin(int debitCardPin) {
+			this.debitCardPin = debitCardPin;
+		}
 
-	@Override
-	public String toString() {
-		return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPIN + 
-				 ", accountNum=" + accountNum + "]";
-	}
+		@Override
+		public String toString() {
+			return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPin + ", rate=" + rate
+					+ ", accountNum=" + accountNum + "]";
+		}
+		
+		
 
 }
+
