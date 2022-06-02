@@ -7,7 +7,10 @@ import com.account.bestbankingapp.model.Checking;
 import com.account.bestbankingapp.model.IBaseRate;
 import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.repository.BestBankingAppRespository;
+
+
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BestBankingAppService {
@@ -30,16 +33,29 @@ public class BestBankingAppService {
 	    return accountRepository.findAll();
 	}
 	//delete accounts
-	public void deleteAccount(Long id) {
-		accountRepository.deleteById(id);
+	public void deleteAccount(String accountNum) {
+		accountRepository.deleteById(accountNum);
 	}
-	//update account
 	
-	public Account updateAccount(Long id, Account accountDetails) {
-		Account account = accountRepository.findById(id).get();
-		account.setName(accountDetails.getName());
-		account.setSsn(accountDetails.getSsn());
-		account.setBalance(accountDetails.getBalance());	        
-	        return accountRepository.save(account);                                
+	//patch accounts
+	public Account patchAccount(String accountNum, String newName) {
+		Account account = accountRepository.findById(accountNum).get();
+		account.setName(newName);
+		return accountRepository.save(account);
+	}
+	
+	//update account	
+	public Account updateAccount(String accountNum, Account accountDetails) {
+		Optional<Account> optionalAccount = accountRepository.findById(accountNum);	
+		if(optionalAccount.isPresent()) {
+			Account account=optionalAccount.get();
+			account.setName(accountDetails.getName());
+			account.setSsn(accountDetails.getSsn());
+			account.setBalance(accountDetails.getBalance());
+			 return accountRepository.save(account);  
+		}
+		else {
+			return null;
+		}
 	}
 }
