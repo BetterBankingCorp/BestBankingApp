@@ -1,8 +1,10 @@
-h2 {
-    padding: 25px;
+nav {
+    background-color: rgba(28, 63, 138, 0.345);  
     font-family: 'Gentium Basic', serif;
-    font-family: 'Inconsolata', monospace;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+nav h2 {
+    padding: 35px 55px;
+    font-size: 35px;
+    font-weight: bold;
 }

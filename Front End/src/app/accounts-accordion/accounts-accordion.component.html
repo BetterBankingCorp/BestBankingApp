@@ -1,11 +1,9 @@
 <accordion class="accordion">
-    <accordion-group heading="{{ account.name }}" *ngFor="let account of apiService.accounts">
+    <accordion-group heading="{{ account.name }}" *ngFor="let account of apiService.accounts" [isOpen]="true">
         <div class="account-info">
             Balance: ${{ account.balance }}
             <div class="buttons">
-                <button>Withdraw</button>
-                <button>Deposit</button>
-                <button>Transfer</button>
+                <app-withdraw-deposit-transfer></app-withdraw-deposit-transfer>
             </div>  
         </div>
     </accordion-group>

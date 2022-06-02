@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -8,12 +8,16 @@ import { ApiService } from '../api.service';
 })
 export class AccountsAccordionComponent implements OnInit {
 
+
   constructor(public apiService : ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getData();
-    console.log(this.apiService.getData());
+    try {
+      this.apiService.getData();
+      console.log(this.apiService.getData());
+    } catch(error) {
+      console.log(error);
+    }
   }
-
 
 }
