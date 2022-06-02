@@ -1,0 +1,23 @@
+.accordion {
+    margin: auto;
+    margin-top: 35px;
+    width: 75%;
+}
+
+.accordion-info {
+    display: flex;
+}
+
+.account-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 92%;
+    margin: auto;
+}
+
+button {
+    background-color:aliceblue;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 0 7px;
+}
