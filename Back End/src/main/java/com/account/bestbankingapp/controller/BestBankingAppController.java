@@ -19,6 +19,7 @@ import com.account.bestbankingapp.model.Checking;
 import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.service.BestBankingAppService;
 
+
 @RestController
 @RequestMapping("/api")
 public class BestBankingAppController {
@@ -39,17 +40,21 @@ public class BestBankingAppController {
 	public List<Account> readAccounts() {
 	    return accountService.getAccounts();
 	}
-	
-	@RequestMapping(value="/accounts/{accountId}", method=RequestMethod.DELETE)
-	public void deleteAccount(@PathVariable(value = "accountId") Long id) {
-		accountService.deleteAccount(id);
-	}
-	@RequestMapping(value="/accounts/{accountId}", method=RequestMethod.PUT)
-	public Account readAccounts(@PathVariable(value = "accountId") Long id, @RequestBody Account accountDetails) {
-	    return accountService.updateAccount(id, accountDetails);
+	@PatchMapping("/accounts/{accountNum}")
+	public Account patchAccount(@PathVariable(value = "accountNum") String accountNum, @PathVariable(value = "newname") String newName) {
+		return accountService.patchAccount(accountNum, newName);
 	}
 	
-
+	@RequestMapping(value="/accounts/{accountNum}", method=RequestMethod.DELETE)
+	public void deleteAccount(@PathVariable(value = "accountNum") String accountNum) {
+		accountService.deleteAccount(accountNum);
+	}
+	@RequestMapping(value="/accounts/{accountNum}", method=RequestMethod.PUT)
+	public Account readAccounts(@PathVariable(value = "accountNum") String AccountNum, @RequestBody Account accountDetails) {
+	    return accountService.updateAccount(AccountNum, accountDetails);
+	}
+	
+	
 }
 
 

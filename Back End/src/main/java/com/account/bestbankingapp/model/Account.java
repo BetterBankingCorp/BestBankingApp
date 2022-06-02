@@ -14,10 +14,10 @@ import com.account.bestbankingapp.model.IBaseRate;
 @Table(name = "account")
 public abstract class Account implements IBaseRate {
 	
-	@Id
-	@GeneratedValue(strategy =GenerationType.IDENTITY)
-	@Column(name="id")
-	protected Long id;
+	//@Id
+	//@GeneratedValue(strategy =GenerationType.IDENTITY)
+	//@Column(name="id")
+	//protected Long id;
 	
 	private String name;
 	@Column
@@ -26,14 +26,15 @@ public abstract class Account implements IBaseRate {
 	private  double balance;
 	@Column
 	protected double rate;
+	@Id
 	@Column
 	protected String accountNum;
 	@Column
 	protected static int index = 10000;
 	
-	public Long getId() {
-		return id;
-	}
+	//public Long getId() {
+		//return id;
+	//}
 	public String getName() {
 		return name;
 	}

@@ -9,6 +9,6 @@ import com.account.bestbankingapp.model.Account;
 
 
 @Repository
-public interface BestBankingAppRespository extends JpaRepository <Account, Long>{
+public interface BestBankingAppRespository extends JpaRepository <Account, String>{
 
 }
