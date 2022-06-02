@@ -72,6 +72,10 @@
   Connected Back End to MySQL Database <br>
   Implemented functionality to Front End <br>
   
+  <h2> Day Four: </h2>
+  Focused on AWS and researched use of S3, RDS, and EBS for full-stack <br>
+  Styling of withdraw, deposit, transfer component <br>
+  Mostly finished backend; tested API calls and cleaned some code <br>
   
   
   </body>
