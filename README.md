@@ -73,8 +73,8 @@
   Implemented functionality to Front End <br>
   
   <h2> Day Four: </h2>
-  Focused on AWS and researched use of S3, RDS, and EBS for full-stack <br>
-  Styling of withdraw, deposit, transfer component <br>
+  Focused on AWS and researched use of S3, RDS, and EBS for full-stack deployment <br>
+  Styling of "withdraw, deposit, transfer" front-end component <br>
   Mostly finished backend; tested API calls and cleaned some code <br>
   
   
