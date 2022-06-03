@@ -35,6 +35,18 @@ public abstract class Account implements IBaseRate {
 	//public Long getId() {
 		//return id;
 	//}
+public Account() {		
+	}
+
+public Account(String name, String ssn, double balance, double rate, String accountNum) {
+	super();
+	this.name = name;
+	this.ssn = ssn;
+	this.balance = balance;
+	this.rate = rate;
+	this.accountNum = accountNum;
+}
+
 	public String getName() {
 		return name;
 	}
@@ -71,26 +83,16 @@ public abstract class Account implements IBaseRate {
 	public static void setIndex(int index) {
 		Account.index = index;
 	}
-	public Account(String name, String ssn, double balance, double rate, String accountNum) {
-		super();
-		this.name = name;
-		this.ssn = ssn;
-		this.balance = balance;
-		this.rate = rate;
-		this.accountNum = accountNum;
-	}
+	
 	public int getNextAccountNumber(){
 		return index++;
 	}
 
-	public Account() {
-		
-	}
+	
 	@Override
 	public String toString() {
 		return "Account [name=" + name + ", ssn=" + ssn + ", balance=" + balance + ", rate=" + rate + ", accountNum="
 				+ accountNum + "]";
 	}
-	
-	
+		
 }
