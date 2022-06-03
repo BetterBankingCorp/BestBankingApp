@@ -21,3 +21,48 @@
 2022-06-03 10:31:54.192  WARN 26108 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2022-06-03 10:31:54.536  INFO 26108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
 2022-06-03 10:31:54.546  INFO 26108 --- [main] c.a.b.BestBankingAppApplication          : Started BestBankingAppApplication in 5.327 seconds (JVM running for 5.945)
+2022-06-03 10:47:09.658  INFO 27008 --- [main] c.a.b.BestBankingAppApplication          : Starting BestBankingAppApplication using Java 17.0.1 on XPXAAD-PF2GKQLC with PID 27008 (C:\Users\RaymondHarmer\git\BestBankingApp\Back End\target\classes started by RaymondHarmer in C:\Users\RaymondHarmer\git\BestBankingApp\Back End)
+2022-06-03 10:47:09.661  INFO 27008 --- [main] c.a.b.BestBankingAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-06-03 10:47:10.171  INFO 27008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-03 10:47:10.220  INFO 27008 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-06-03 10:47:10.881  INFO 27008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-03 10:47:10.892  INFO 27008 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-03 10:47:10.892  INFO 27008 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-03 10:47:11.030  INFO 27008 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-03 10:47:11.030  INFO 27008 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1322 ms
+2022-06-03 10:47:11.238  INFO 27008 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-03 10:47:11.291  INFO 27008 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-03 10:47:11.439  INFO 27008 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-03 10:47:11.539  INFO 27008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-03 10:47:11.544  WARN 27008 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-03 10:47:11.936  INFO 27008 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-03 10:47:11.948  INFO 27008 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-03 10:47:12.732  INFO 27008 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-03 10:47:12.740  INFO 27008 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-03 10:47:13.050  WARN 27008 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-03 10:47:13.390  INFO 27008 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-03 10:47:13.399  INFO 27008 --- [main] c.a.b.BestBankingAppApplication          : Started BestBankingAppApplication in 4.226 seconds (JVM running for 4.869)
+2022-06-03 11:03:58.404  INFO 27008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-03 11:03:58.406  INFO 27008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-03 11:03:58.409  INFO 27008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-06-03 11:04:43.327  INFO 17380 --- [main] c.a.b.BestBankingAppApplication          : Starting BestBankingAppApplication using Java 17.0.1 on XPXAAD-PF2GKQLC with PID 17380 (C:\Users\RaymondHarmer\git\BestBankingApp\Back End\target\classes started by RaymondHarmer in C:\Users\RaymondHarmer\git\BestBankingApp\Back End)
+2022-06-03 11:04:43.334  INFO 17380 --- [main] c.a.b.BestBankingAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-06-03 11:04:44.184  INFO 17380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-03 11:04:44.254  INFO 17380 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-06-03 11:04:45.021  INFO 17380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-03 11:04:45.038  INFO 17380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-03 11:04:45.038  INFO 17380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-03 11:04:45.246  INFO 17380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-03 11:04:45.249  INFO 17380 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1841 ms
+2022-06-03 11:04:45.537  INFO 17380 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-03 11:04:45.625  INFO 17380 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-03 11:04:45.834  INFO 17380 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-03 11:04:45.961  INFO 17380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-03 11:04:45.969  WARN 17380 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-03 11:04:46.443  INFO 17380 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-03 11:04:46.457  INFO 17380 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-03 11:04:47.140  INFO 17380 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-03 11:04:47.154  INFO 17380 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-03 11:04:47.444  WARN 17380 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-03 11:04:47.784  INFO 17380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-03 11:04:47.792  INFO 17380 --- [main] c.a.b.BestBankingAppApplication          : Started BestBankingAppApplication in 5.121 seconds (JVM running for 5.71)
