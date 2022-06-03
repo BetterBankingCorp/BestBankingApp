@@ -11,7 +11,7 @@ export class ApiService {
   constructor(private http : HttpClient) { }
 
   getData() {
-    return this.http.get('http://localhost:8080/bestbanking_app/allaccounts').subscribe(res => {
+    return this.http.get('http://localhost:8080/api/accounts').subscribe(res => {
       this.accounts = res;
       console.log(this.accounts);
     });

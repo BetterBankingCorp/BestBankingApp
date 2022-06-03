@@ -1,1 +1,68 @@
-<p>withdraw-deposit-transfer works!</p>
+<button type="button" class="btn btn-primary" (click)="openModal(withdraw)">Withdraw</button>
+ 
+<ng-template #withdraw>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Withdraw</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Hi
+  </div>
+</ng-template>
+
+<button type="button" class="btn btn-primary" (click)="openModal(deposit)">Deposit</button>
+ 
+<ng-template #deposit>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Deposit</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    This is a modal.
+  </div>
+</ng-template>
+
+<button type="button" class="btn btn-primary" (click)="openModal(transfer)">Transfer</button>
+ 
+<ng-template #transfer>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Transfer</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <label for="ice-cream-choice">Account transferring from: </label>
+    <br>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+    <br>
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist><br>
+
+    <label for="ice-cream-choice">Account transferring to: </label>
+    <br>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+    <br>
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist><br>
+
+    <label for="fname">Transfer amount: </label> <br>
+    <input type="text" id="fname" name="fname"><br><br>
+  </div>
+</ng-template>
