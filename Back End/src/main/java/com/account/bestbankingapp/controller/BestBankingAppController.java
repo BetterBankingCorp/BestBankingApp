@@ -74,7 +74,10 @@ public class BestBankingAppController {
 	public Account withdrawAccount(@PathVariable(value = "accountNum") String accountNum,  @PathVariable(value = "withdrawAmount") double withdrawAmount) {
 		return accountService.withdrawAccount(accountNum, withdrawAmount);
 	}
-	
+	@PatchMapping("/accounts/transfer/{fromAccountNum}/{toAccountNum}/{transferAmount}")
+	public List<Account> transferAmount(@PathVariable(value = "fromAccountNum") String fromAccountNum, @PathVariable(value = "toAccountNum") String toAccountNum,  @PathVariable(value = "transferAmount") double transferAmount) {
+		return accountService.transferAmount(fromAccountNum, toAccountNum,transferAmount );
+	}
 }
 
 
