@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import com.account.bestbankingapp.model.Account;
 
 @Entity
-@Table(name = "account")
+//@Table(name = "account")
 public class Savings extends Account {
 	@Column(name = "safetyDepositBoxID") 
 	private int safetyDepositBoxID;

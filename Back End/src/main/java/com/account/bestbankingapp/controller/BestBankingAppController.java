@@ -49,11 +49,20 @@ public class BestBankingAppController {
 	public void deleteAccount(@PathVariable(value = "accountNum") String accountNum) {
 		accountService.deleteAccount(accountNum);
 	}
-	@RequestMapping(value="/accounts/{accountNum}", method=RequestMethod.PUT)
-	public Account readAccounts(@PathVariable(value = "accountNum") String AccountNum, @RequestBody Account accountDetails) {
-	    return accountService.updateAccount(AccountNum, accountDetails);
+	@RequestMapping(value="/accounts/savings/{accountNum}", method=RequestMethod.PUT)
+	public Account readAccounts(@PathVariable(value = "accountNum") String AccountNum, @RequestBody Savings accountDetails) {
+	    return accountService.updateSavingsAccount(AccountNum, accountDetails);
 	}
 	
+	@PatchMapping("/accounts/deposit/{accountNum}/{depositAmount}")
+	public Account depositAccount(@PathVariable(value = "accountNum") String accountNum,  @PathVariable(value = "depositAmount") double depositAmount) {
+		return accountService.depositAccount(accountNum, depositAmount);
+	}
+	
+	@PatchMapping("/accounts/withdraw/{accountNum}/{withdrawAmount}")
+	public Account withdrawAccount(@PathVariable(value = "accountNum") String accountNum,  @PathVariable(value = "withdrawAmount") double withdrawAmount) {
+		return accountService.withdrawAccount(accountNum, withdrawAmount);
+	}
 	
 }
 

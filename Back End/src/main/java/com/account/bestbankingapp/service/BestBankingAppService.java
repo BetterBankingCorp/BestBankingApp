@@ -45,14 +45,49 @@ public class BestBankingAppService {
 	}
 	
 	//update account	
-	public Account updateAccount(String accountNum, Account accountDetails) {
+	public Account updateSavingsAccount(String accountNum, Savings accountDetails) {
 		Optional<Account> optionalAccount = accountRepository.findById(accountNum);	
+		
 		if(optionalAccount.isPresent()) {
-			Account account=optionalAccount.get();
+			Savings account=(Savings) optionalAccount.get();
 			account.setName(accountDetails.getName());
 			account.setSsn(accountDetails.getSsn());
-			account.setBalance(accountDetails.getBalance());
-			 return accountRepository.save(account);  
+			return accountRepository.save(account);  
+		}
+		else {
+			return null;
+		}
+
+	}
+	
+	//deposit account
+	public Account depositAccount(String accountNum, double depositAmount) {
+		Optional<Account> optionalAccount = accountRepository.findById(accountNum);	
+		
+		if(optionalAccount.isPresent()) {
+			Account account=optionalAccount.get();
+			account.setBalance(account.getBalance() + depositAmount);
+			return accountRepository.save(account);  
+		}
+		else {
+			return null;
+		}
+	}
+	
+	//withdraw account
+	public Account withdrawAccount(String accountNum, double withdrawAmount) {
+		Optional<Account> optionalAccount = accountRepository.findById(accountNum);	
+		
+		if(optionalAccount.isPresent()) {
+			Account account=optionalAccount.get();
+			
+			if(account.getBalance() >= withdrawAmount) { //Withdraw only if the balance is >= withdrawal amount
+				account.setBalance(account.getBalance() - withdrawAmount);
+				return accountRepository.save(account); 
+			}
+			else {
+				return account;
+			}
 		}
 		else {
 			return null;
