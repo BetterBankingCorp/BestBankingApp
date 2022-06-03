@@ -8,7 +8,7 @@ import com.account.bestbankingapp.model.IBaseRate;
 import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.repository.BestBankingAppRespository;
 
-
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -91,6 +91,30 @@ public class BestBankingAppService {
 		}
 		else {
 			return null;
+		}		
+	}
+	
+	//transfer amount
+	public List<Account> transferAmount(String fromAccountNum, String toAccountNum, double transferAmount) {
+		Optional<Account> optionalFromAccount = accountRepository.findById(fromAccountNum);	
+		Optional<Account> optionalToAccount = accountRepository.findById(toAccountNum);	
+		if(optionalFromAccount.isPresent() && optionalToAccount.isPresent()) {
+			Account fromAccount=optionalFromAccount.get();
+			Account toAccount=optionalToAccount.get();
+			List<Account> accounts = new ArrayList<Account>();
+			accounts.add(fromAccount);
+			accounts.add(toAccount);
+			
+			if(fromAccount.getBalance() >= transferAmount) {
+				withdrawAccount(fromAccountNum, transferAmount);//Withdraw only if the balance is >= withdrawal amount
+				depositAccount(toAccountNum,transferAmount );
+				accountRepository.save(fromAccount);
+				accountRepository.save(toAccount);				
+			}
+			return accounts;			
 		}
+		else {
+			return null;
+		}		
 	}
 }
