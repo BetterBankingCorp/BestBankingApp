@@ -64,14 +64,22 @@ public class BestBankingAppController {
 	}
 	
 	@CrossOrigin(origins = "*")
+ Withdraw-Deposit-Transfer
+	@PatchMapping("/accounts/deposit/{accountNum}")
+	public Account depositAccount(@PathVariable(value = "accountNum") String accountNum,  @RequestBody double depositAmount) {
+
 	@PatchMapping("/accounts/deposit/{accountNum}/{depositAmount}")
 	public Account depositAccount(@PathVariable(value = "accountNum") String accountNum,  @PathVariable(value = "depositAmount") double depositAmount) {
 		return accountService.depositAccount(accountNum, depositAmount);
 	}
 	
 	@CrossOrigin(origins = "*")
+   Withdraw-Deposit-Transfer
+	@PatchMapping("/accounts/withdraw/{accountNum}")
+	public Account withdrawAccount(@PathVariable(value = "accountNum") String accountNum,  @RequestBody double withdrawAmount) {
+
 	@PatchMapping("/accounts/withdraw/{accountNum}/{withdrawAmount}")
-	public Account withdrawAccount(@PathVariable(value = "accountNum") String accountNum,  @PathVariable(value = "withdrawAmount") double withdrawAmount) {
+	public Account withdrawAccount(@PathVariable(value = "accountNum") String accountNum,  @PathVariable(value = "withdrawAmount") double withdrawAmount) {main
 		return accountService.withdrawAccount(accountNum, withdrawAmount);
 	}
 	@PatchMapping("/accounts/transfer/{fromAccountNum}/{toAccountNum}/{transferAmount}")

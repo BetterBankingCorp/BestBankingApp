@@ -8,7 +8,10 @@
     </button>
   </div>
   <div class="modal-body">
-    Hi
+    <p>Account number: {{currentAccountNum}}</p>
+    <label for="withdraw-amount">Withdraw amount:</label><br>
+    <input #withdrawAmt id="withdraw-amount" name="withdraw-amount"><br><br>
+    <button (click)="withdrawAcc(getUserInputAmount(withdrawAmt.value))" (click)="closeModal()">OK</button>
   </div>
 </ng-template>
 
@@ -22,7 +25,10 @@
     </button>
   </div>
   <div class="modal-body">
-    This is a modal.
+    <p>Account number: {{currentAccountNum}}</p>
+    <label for="deposit-amount">Deposit amount:</label><br>
+    <input #depositAmt id="deposit-amount" name="deposit-amount"><br><br>
+    <button (click)="depositAcc(getUserInputAmount(depositAmt.value))" (click)="closeModal()">OK</button>
   </div>
 </ng-template>
 
@@ -36,33 +42,17 @@
     </button>
   </div>
   <div class="modal-body">
-    <label for="ice-cream-choice">Account transferring from: </label>
+    <label for="account-choice">Account transferring to: </label>
     <br>
-    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+    <input list="available-accounts" id="accounts-dropdown" name="account-choice" />
     <br>
 
-    <datalist id="ice-cream-flavors">
-        <option value="Chocolate">
-        <option value="Coconut">
-        <option value="Mint">
-        <option value="Strawberry">
-        <option value="Vanilla">
+    <datalist id="available-accounts">
+        <option *ngFor="let account of apiService.accounts" [value]="account.accountNum">
     </datalist><br>
 
-    <label for="ice-cream-choice">Account transferring to: </label>
-    <br>
-    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
-    <br>
-
-    <datalist id="ice-cream-flavors">
-        <option value="Chocolate">
-        <option value="Coconut">
-        <option value="Mint">
-        <option value="Strawberry">
-        <option value="Vanilla">
-    </datalist><br>
-
-    <label for="fname">Transfer amount: </label> <br>
-    <input type="text" id="fname" name="fname"><br><br>
+    <label for="transfer-amount">Transfer amount:</label><br>
+    <input #transferAmt id="transfer-amount" name="transfer-amount"><br><br>
+    <button (click)="depositAcc(getUserInputAmount(transferAmt.value))" (click)="closeModal()">OK</button>
   </div>
 </ng-template>
