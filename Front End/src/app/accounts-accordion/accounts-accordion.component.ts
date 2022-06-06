@@ -8,16 +8,19 @@ import { ApiService } from '../api.service';
 })
 export class AccountsAccordionComponent implements OnInit {
 
+  moveAmount !: number
 
   constructor(public apiService : ApiService) { }
 
   ngOnInit(): void {
     try {
       this.apiService.getData();
-      console.log(this.apiService.getData());
     } catch(error) {
       console.log(error);
     }
   }
 
+  yes(info : any) {
+    console.log(info)
+  }
 }

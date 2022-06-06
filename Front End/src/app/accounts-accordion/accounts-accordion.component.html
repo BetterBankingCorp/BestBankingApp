@@ -3,7 +3,7 @@
         <div class="account-info">
             ${{ account.balance }}
             <div class="buttons">
-                <app-withdraw-deposit-transfer></app-withdraw-deposit-transfer>
+                <app-withdraw-deposit-transfer (moveAmount)="moveAmount" [accountNum]="account.accountNum"></app-withdraw-deposit-transfer>
             </div>  
         </div>
     </accordion-group>
