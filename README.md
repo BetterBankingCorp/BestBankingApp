@@ -77,5 +77,22 @@
   Styling of "withdraw, deposit, transfer" front-end component <br>
   Mostly finished backend; tested API calls and cleaned some code <br>
   
+  <h2> Day Five: </h2>
+  Completed the creation of the JAR file for AWS deployment <br>
+  Created the implementation of a Transfer method <br>
+  Created Patch method <br>
+  Created the RDS environment for CRUD operations on AWS <br>
+  Elastic Beanstalk environment for springboot deployements <br>
+  
+  <h2> Day Six: </h2>
+  *Create S3 Bucket on AWS <br>
+  *Project Testing <br>
+  
+  <h2> Day Seven: </h2>
+  *Front End Design <br>
+  
+  <h2> Day Eight: </h2>
+  *Presentation Creation and Practice <br>
+  
   
   </body>
