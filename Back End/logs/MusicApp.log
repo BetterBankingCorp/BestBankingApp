@@ -781,3 +781,279 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2022-06-06 22:05:18.627  INFO 1692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-06-06 22:05:18.629  INFO 1692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-06-06 22:05:18.638  INFO 1692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:40:15.051  INFO 3368 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 3368 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:40:15.052  INFO 3368 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:40:15.611  INFO 3368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:40:15.659  INFO 3368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:40:16.212  INFO 3368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:40:16.261  INFO 3368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:40:16.396  INFO 3368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:40:16.556  INFO 3368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:40:16.561  WARN 3368 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:40:17.200  INFO 3368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:40:17.213  INFO 3368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:40:17.835  INFO 3368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:40:17.842  INFO 3368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:40:18.394  WARN 3368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:40:19.008  INFO 3368 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.259 seconds (JVM running for 5.142)
+2022-06-07 12:40:20.270  INFO 3368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:40:20.273  INFO 3368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:40:20.527  INFO 3368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:40:55.885  INFO 21876 --- [main] c.a.b.BestBankingAppApplication          : Starting BestBankingAppApplication using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 21876 (C:\Users\ShaneCupid\git\BestBankingApp\Back End\target\classes started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:40:55.888  INFO 21876 --- [main] c.a.b.BestBankingAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:40:56.378  INFO 21876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:40:56.421  INFO 21876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:40:56.895  INFO 21876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2022-06-07 12:40:56.904  INFO 21876 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-07 12:40:56.905  INFO 21876 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-07 12:40:56.998  INFO 21876 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-07 12:40:56.998  INFO 21876 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1060 ms
+2022-06-07 12:40:57.124  INFO 21876 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:40:57.155  INFO 21876 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:40:57.272  INFO 21876 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:40:57.348  INFO 21876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:40:57.352  WARN 21876 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:40:57.908  INFO 21876 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:40:57.922  INFO 21876 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:40:58.411  INFO 21876 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:40:58.417  INFO 21876 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:40:58.621  WARN 21876 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:40:58.882  INFO 21876 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2022-06-07 12:40:58.890  INFO 21876 --- [main] c.a.b.BestBankingAppApplication          : Started BestBankingAppApplication in 3.372 seconds (JVM running for 3.716)
+2022-06-07 12:41:15.200  INFO 25248 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 25248 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:41:15.202  INFO 25248 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:41:15.769  INFO 25248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:41:15.821  INFO 25248 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:41:16.355  INFO 25248 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:41:16.408  INFO 25248 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:41:16.548  INFO 25248 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:41:16.713  INFO 25248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:41:16.718  WARN 25248 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:41:17.370  INFO 25248 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:41:17.382  INFO 25248 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:41:18.020  INFO 25248 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:41:18.030  INFO 25248 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:41:18.632  WARN 25248 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:41:19.272  INFO 25248 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.373 seconds (JVM running for 5.298)
+2022-06-07 12:41:19.857  INFO 25248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:41:19.859  INFO 25248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:41:20.116  INFO 25248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:43:03.449  INFO 15196 --- [main] c.a.b.BestBankingAppApplication          : Starting BestBankingAppApplication using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 15196 (C:\Users\ShaneCupid\git\BestBankingApp\Back End\target\classes started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:43:03.451  INFO 15196 --- [main] c.a.b.BestBankingAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:43:03.873  INFO 15196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:43:03.922  INFO 15196 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:43:04.385  INFO 15196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2022-06-07 12:43:04.393  INFO 15196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-07 12:43:04.393  INFO 15196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-07 12:43:04.480  INFO 15196 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-07 12:43:04.481  INFO 15196 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 992 ms
+2022-06-07 12:43:04.608  INFO 15196 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:43:04.639  INFO 15196 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:43:04.753  INFO 15196 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:43:04.824  INFO 15196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:43:04.829  WARN 15196 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:43:05.425  INFO 15196 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:43:05.438  INFO 15196 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:43:05.936  INFO 15196 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:43:05.942  INFO 15196 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:43:06.134  WARN 15196 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:43:06.375  INFO 15196 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2022-06-07 12:43:06.384  INFO 15196 --- [main] c.a.b.BestBankingAppApplication          : Started BestBankingAppApplication in 3.263 seconds (JVM running for 3.565)
+2022-06-07 12:43:29.305  INFO 19588 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 19588 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:43:29.306  INFO 19588 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:43:29.871  INFO 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:43:29.927  INFO 19588 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:43:30.516  INFO 19588 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:43:30.568  INFO 19588 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:43:30.703  INFO 19588 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:43:30.863  INFO 19588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:43:30.871  WARN 19588 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:43:31.512  INFO 19588 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:43:31.526  INFO 19588 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:43:32.193  INFO 19588 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:43:32.209  INFO 19588 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:43:32.725  WARN 19588 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:43:33.407  INFO 19588 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.385 seconds (JVM running for 5.298)
+2022-06-07 12:43:34.649  INFO 19588 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:43:34.652  INFO 19588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:43:34.920  INFO 19588 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:45:00.080  INFO 4976 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 4976 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:45:00.082  INFO 4976 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:45:00.642  INFO 4976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:45:00.717  INFO 4976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:45:01.397  INFO 4976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:45:01.454  INFO 4976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:45:01.602  INFO 4976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:45:01.748  INFO 4976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:45:01.754  WARN 4976 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:45:02.406  INFO 4976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:45:02.421  INFO 4976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:45:03.011  INFO 4976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:45:03.027  INFO 4976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:45:03.773  WARN 4976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:45:04.716  INFO 4976 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.941 seconds (JVM running for 5.814)
+2022-06-07 12:45:05.368  INFO 4976 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:45:05.370  INFO 4976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:45:05.622  INFO 4976 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:50:12.916  INFO 19880 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 19880 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:50:12.919  INFO 19880 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:50:13.518  INFO 19880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:50:13.580  INFO 19880 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:50:14.104  INFO 19880 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:50:14.169  INFO 19880 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:50:14.344  INFO 19880 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:50:14.501  INFO 19880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:50:14.507  WARN 19880 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:50:15.305  INFO 19880 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:50:15.327  INFO 19880 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:50:16.089  INFO 19880 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:50:16.098  INFO 19880 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:50:16.664  WARN 19880 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:50:17.302  INFO 19880 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.736 seconds (JVM running for 5.721)
+2022-06-07 12:50:17.880  INFO 19880 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:50:17.882  INFO 19880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:50:18.129  INFO 19880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:50:27.803  INFO 25840 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 25840 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:50:27.804  INFO 25840 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:50:28.381  INFO 25840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:50:28.426  INFO 25840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:50:28.948  INFO 25840 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:50:28.991  INFO 25840 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:50:29.123  INFO 25840 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:50:29.280  INFO 25840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:50:29.284  WARN 25840 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:50:29.941  INFO 25840 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:50:29.953  INFO 25840 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:50:30.615  INFO 25840 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:50:30.623  INFO 25840 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:50:31.175  WARN 25840 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:50:31.827  INFO 25840 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.365 seconds (JVM running for 5.267)
+2022-06-07 12:50:32.377  INFO 25840 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:50:32.380  INFO 25840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:50:32.647  INFO 25840 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:50:43.973  INFO 25620 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 25620 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:50:43.975  INFO 25620 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:50:44.543  INFO 25620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:50:44.603  INFO 25620 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:50:45.132  INFO 25620 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:50:45.181  INFO 25620 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:50:45.340  INFO 25620 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:50:45.509  INFO 25620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:50:45.513  WARN 25620 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:50:46.136  INFO 25620 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:50:46.152  INFO 25620 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:50:46.795  INFO 25620 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:50:46.802  INFO 25620 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:50:47.351  WARN 25620 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:50:48.014  INFO 25620 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.355 seconds (JVM running for 5.206)
+2022-06-07 12:50:48.643  INFO 25620 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:50:48.646  INFO 25620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:50:48.899  INFO 25620 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:51:05.829  INFO 15136 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 15136 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:51:05.830  INFO 15136 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:51:06.405  INFO 15136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:51:06.459  INFO 15136 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:51:06.981  INFO 15136 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:51:07.037  INFO 15136 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:51:07.173  INFO 15136 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:51:07.324  INFO 15136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:51:07.329  WARN 15136 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:51:07.985  INFO 15136 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:51:08.001  INFO 15136 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:51:08.642  INFO 15136 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:51:08.652  INFO 15136 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:51:09.173  WARN 15136 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:51:09.781  INFO 15136 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.25 seconds (JVM running for 5.072)
+2022-06-07 12:51:10.351  INFO 15136 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:51:10.354  INFO 15136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:51:10.612  INFO 15136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:51:26.412  INFO 25568 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 25568 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:51:26.413  INFO 25568 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:51:26.975  INFO 25568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:51:27.033  INFO 25568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:51:27.592  INFO 25568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:51:27.649  INFO 25568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:51:27.792  INFO 25568 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:51:27.959  INFO 25568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:51:27.964  WARN 25568 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:51:28.641  INFO 25568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:51:28.652  INFO 25568 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:51:29.283  INFO 25568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:51:29.290  INFO 25568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:51:29.819  WARN 25568 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:51:30.456  INFO 25568 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.332 seconds (JVM running for 5.246)
+2022-06-07 12:51:30.875  INFO 25568 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:51:30.877  INFO 25568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:51:31.112  INFO 25568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:52:07.751  INFO 28112 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 28112 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:52:07.753  INFO 28112 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:52:08.344  INFO 28112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:52:08.411  INFO 28112 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:52:08.966  INFO 28112 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:52:09.026  INFO 28112 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:52:09.184  INFO 28112 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:52:09.341  INFO 28112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:52:09.346  WARN 28112 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:52:10.007  INFO 28112 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:52:10.020  INFO 28112 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:52:10.684  INFO 28112 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:52:10.690  INFO 28112 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:52:11.247  WARN 28112 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:52:11.909  INFO 28112 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.461 seconds (JVM running for 5.351)
+2022-06-07 12:52:12.631  INFO 28112 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:52:12.633  INFO 28112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:52:12.897  INFO 28112 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:53:32.097  INFO 25308 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 25308 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:53:32.099  INFO 25308 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:53:32.671  INFO 25308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:53:32.726  INFO 25308 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:53:33.294  INFO 25308 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:53:33.351  INFO 25308 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:53:33.490  INFO 25308 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:53:33.663  INFO 25308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:53:33.669  WARN 25308 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:53:34.319  INFO 25308 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:53:34.333  INFO 25308 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:53:34.993  INFO 25308 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:53:35.000  INFO 25308 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:53:35.556  WARN 25308 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:53:36.181  INFO 25308 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.383 seconds (JVM running for 5.259)
+2022-06-07 12:53:36.877  INFO 25308 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:53:36.880  INFO 25308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:53:37.136  INFO 25308 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:55:23.263  INFO 16012 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 16012 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:55:23.264  INFO 16012 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:55:23.852  INFO 16012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:55:23.928  INFO 16012 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:55:24.479  INFO 16012 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:55:24.529  INFO 16012 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:55:24.666  INFO 16012 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:55:24.810  INFO 16012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:55:24.816  WARN 16012 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:55:25.485  INFO 16012 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:55:25.504  INFO 16012 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:55:26.192  INFO 16012 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:55:26.202  INFO 16012 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:55:26.786  WARN 16012 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:55:27.431  INFO 16012 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.425 seconds (JVM running for 5.356)
+2022-06-07 12:55:29.120  INFO 16012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:55:29.122  INFO 16012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:55:29.372  INFO 16012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:57:26.737  INFO 6764 --- [main] c.a.bestbankingapp.BankApplicationTests  : Starting BankApplicationTests using Java 17.0.2 on XPXAAD-PF2GJCLF with PID 6764 (started by ShaneCupid in C:\Users\ShaneCupid\git\BestBankingApp\Back End)
+2022-06-07 12:57:26.739  INFO 6764 --- [main] c.a.bestbankingapp.BankApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:57:27.383  INFO 6764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:57:27.448  INFO 6764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:57:27.958  INFO 6764 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:57:28.004  INFO 6764 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:57:28.134  INFO 6764 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:57:28.294  INFO 6764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:57:28.299  WARN 6764 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:57:28.968  INFO 6764 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:57:28.979  INFO 6764 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:57:29.619  INFO 6764 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:57:29.629  INFO 6764 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:57:30.244  WARN 6764 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:57:30.896  INFO 6764 --- [main] c.a.bestbankingapp.BankApplicationTests  : Started BankApplicationTests in 4.421 seconds (JVM running for 5.366)
+2022-06-07 12:57:32.786  INFO 6764 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:57:32.790  INFO 6764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-07 12:57:33.039  INFO 6764 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
