@@ -34,10 +34,14 @@ export class ApiService {
   }
 
   transfer(transferAmount : number, fromAccountNum : string, toAccountNum : string) {
-    return this.http.patch(this.URL + '/transfer/'+ fromAccountNum + "/" + toAccountNum, transferAmount).subscribe( res => {
+    return this.http.patch(this.URL + '/transfer/'+ fromAccountNum + "/" + toAccountNum + '/' + transferAmount, null).subscribe( res => {
       console.log(res)
       console.log(transferAmount)
     })
   }
+
+  //createAccount(accountType : string, formData : FormData) {
+   // return this.http.post(this.URL + '/' + accountType, JSON.stringify(Object.fromEntries(formData))
+ // }
   
 }

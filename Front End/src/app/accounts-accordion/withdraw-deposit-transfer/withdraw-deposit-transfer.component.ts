@@ -47,4 +47,11 @@ export class WithdrawDepositTransferComponent implements OnInit {
     console.log(depositAmount)
     console.log(this.currentAccountNum)
   }
+
+  transferAcc(transferAmount : number, toAccountNum : string) {
+    this.apiService.transfer(transferAmount, this.currentAccountNum, toAccountNum)
+    console.log(transferAmount)
+    console.log(this.currentAccountNum)
+    console.log(toAccountNum)
+  }
 }

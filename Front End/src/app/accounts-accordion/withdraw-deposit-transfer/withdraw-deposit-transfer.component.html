@@ -44,7 +44,7 @@
   <div class="modal-body">
     <label for="account-choice">Account transferring to: </label>
     <br>
-    <input list="available-accounts" id="accounts-dropdown" name="account-choice" />
+    <input list="available-accounts" id="accounts-dropdown" name="account-choice" #accountTo>
     <br>
 
     <datalist id="available-accounts">
@@ -53,6 +53,6 @@
 
     <label for="transfer-amount">Transfer amount:</label><br>
     <input #transferAmt id="transfer-amount" name="transfer-amount" autocomplete="off"><br><br>
-    <button (click)="depositAcc(getUserInputAmount(transferAmt.value))" (click)="closeModal()">OK</button>
+    <button (click)="transferAcc(getUserInputAmount(transferAmt.value), accountTo.value)" (click)="closeModal()">OK</button>
   </div>
 </ng-template>

@@ -1,7 +1,7 @@
 <accordion class="accordion">
-    <accordion-group heading="{{ account.accountNum }}" *ngFor="let account of apiService.accounts" [isOpen]="true">
+    <accordion-group heading="{{ account.accountNum }}" *ngFor="let account of apiService.accounts" [isOpen]="true" class="accordion-block">
         <div class="account-info">
-            ${{ account.balance }}
+            {{ account.balance | currency:'USD' }}
             <div class="buttons">
                 <app-withdraw-deposit-transfer (moveAmount)="moveAmount" [accountNum]="account.accountNum"></app-withdraw-deposit-transfer>
             </div>  
