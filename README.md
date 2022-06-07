@@ -85,8 +85,9 @@
   Elastic Beanstalk environment for springboot deployements <br>
   
   <h2> Day Six: </h2>
-  *Create S3 Bucket on AWS <br>
-  *Project Testing <br>
+  Created S3 Bucket on AWS <br>
+  Project Testing <br>
+  Transfer feature implementation logic added <br>
   
   <h2> Day Seven: </h2>
   *Front End Design <br>
