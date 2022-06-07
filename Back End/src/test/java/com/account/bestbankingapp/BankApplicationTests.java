@@ -53,14 +53,14 @@ class BankApplicationTests {
 			assertEquals("Shanes Checking Account", c.getName());
 		}
 		//deleting
-		@Test
-		@Order(5)
-		public void testDelete() {
-			bRepo.deleteById("Savings-10004");
-			assertThat(bRepo.existsById("Savings-10004")).isFalse();
+		//@Test
+		//@Order(4)
+		//public void testDelete() {
+			//bRepo.deleteById("Savings-10004");
+			//assertThat(bRepo.existsById("Savings-10004")).isFalse();
 			//assertThat(mRepo.existsById(2L)).isTrue();
 
-		}
+		//}
 	}
 
 		

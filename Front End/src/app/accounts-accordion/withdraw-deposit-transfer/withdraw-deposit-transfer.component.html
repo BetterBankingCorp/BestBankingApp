@@ -10,7 +10,7 @@
   <div class="modal-body">
     <p>Account number: {{currentAccountNum}}</p>
     <label for="withdraw-amount">Withdraw amount:</label><br>
-    <input #withdrawAmt id="withdraw-amount" name="withdraw-amount"><br><br>
+    <input #withdrawAmt id="withdraw-amount" name="withdraw-amount" autocomplete="off"><br><br>
     <button (click)="withdrawAcc(getUserInputAmount(withdrawAmt.value))" (click)="closeModal()">OK</button>
   </div>
 </ng-template>
@@ -27,7 +27,7 @@
   <div class="modal-body">
     <p>Account number: {{currentAccountNum}}</p>
     <label for="deposit-amount">Deposit amount:</label><br>
-    <input #depositAmt id="deposit-amount" name="deposit-amount"><br><br>
+    <input #depositAmt id="deposit-amount" name="deposit-amount" autocomplete="off"><br><br>
     <button (click)="depositAcc(getUserInputAmount(depositAmt.value))" (click)="closeModal()">OK</button>
   </div>
 </ng-template>
@@ -52,7 +52,7 @@
     </datalist><br>
 
     <label for="transfer-amount">Transfer amount:</label><br>
-    <input #transferAmt id="transfer-amount" name="transfer-amount"><br><br>
+    <input #transferAmt id="transfer-amount" name="transfer-amount" autocomplete="off"><br><br>
     <button (click)="depositAcc(getUserInputAmount(transferAmt.value))" (click)="closeModal()">OK</button>
   </div>
 </ng-template>
