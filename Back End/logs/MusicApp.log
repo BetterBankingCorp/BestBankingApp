@@ -781,3 +781,24 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2022-06-06 22:05:18.627  INFO 1692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-06-06 22:05:18.629  INFO 1692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-06-06 22:05:18.638  INFO 1692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-07 12:15:02.741  INFO 3976 --- [main] c.a.b.BestBankingAppApplication          : Starting BestBankingAppApplication using Java 17.0.1 on XPXAAD-PF2GKQLC with PID 3976 (C:\Users\RaymondHarmer\git\BestBankingApp\Back End\target\classes started by RaymondHarmer in C:\Users\RaymondHarmer\git\BestBankingApp\Back End)
+2022-06-07 12:15:02.744  INFO 3976 --- [main] c.a.b.BestBankingAppApplication          : No active profile set, falling back to 1 default profile: "default"
+2022-06-07 12:15:03.599  INFO 3976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-07 12:15:03.697  INFO 3976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interfaces.
+2022-06-07 12:15:04.753  INFO 3976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5000 (http)
+2022-06-07 12:15:04.766  INFO 3976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-07 12:15:04.767  INFO 3976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-07 12:15:04.964  INFO 3976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-07 12:15:04.965  INFO 3976 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2160 ms
+2022-06-07 12:15:05.311  INFO 3976 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-07 12:15:05.358  INFO 3976 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-07 12:15:05.676  INFO 3976 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-07 12:15:05.832  INFO 3976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-07 12:15:05.837  WARN 3976 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-06-07 12:15:08.361  INFO 3976 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-07 12:15:08.393  INFO 3976 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-06-07 12:15:09.443  INFO 3976 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-07 12:15:09.470  INFO 3976 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-07 12:15:10.198  WARN 3976 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-07 12:15:11.041  INFO 3976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5000 (http) with context path ''
+2022-06-07 12:15:11.066  INFO 3976 --- [main] c.a.b.BestBankingAppApplication          : Started BestBankingAppApplication in 8.85 seconds (JVM running for 9.751)
