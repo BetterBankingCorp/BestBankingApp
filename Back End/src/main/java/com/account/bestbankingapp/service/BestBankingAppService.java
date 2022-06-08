@@ -32,6 +32,10 @@ public class BestBankingAppService {
 	public List<Account> getAccounts() {
 	    return accountRepository.findAll();
 	}
+	
+	public List<Account> getAccountsBySSN(String SSN) {
+		return accountRepository.findByName(SSN);
+	}
 	//delete accounts
 	public void deleteAccount(String accountNum) {
 		accountRepository.deleteById(accountNum);

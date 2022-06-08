@@ -1,5 +1,11 @@
 button {
-    margin: 0 11px;
-    background-color: gray;
+    background-color: rgba(93, 113, 130, 0.571);
     border-radius: 4px; 
+    color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 11px;
+}
+
+span {
+    font-weight: bold;
 }

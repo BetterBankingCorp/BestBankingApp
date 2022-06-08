@@ -18,7 +18,7 @@ public abstract class Account implements IBaseRate {
 	//@GeneratedValue(strategy =GenerationType.IDENTITY)
 	//@Column(name="id")
 	//protected Long id;
-	
+	@Column
 	private String name;
 	@Column
 	private String ssn;

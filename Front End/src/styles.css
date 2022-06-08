@@ -1,10 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
-
-html, body {  
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Nuosu+SIL&family=Playfair+Display:wght@700&family=Prata&family=Questrial&family=Roboto&family=Yanone+Kaffeesatz&display=swap');
 
 body {
-    margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;   
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;   
+}
+
+html {
+    overflow: hidden;
 }

@@ -11,7 +11,6 @@ import { AccordionComponent, AccordionModule } from 'ngx-bootstrap/accordion';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 import { WithdrawDepositTransferComponent } from './accounts-accordion/withdraw-deposit-transfer/withdraw-deposit-transfer.component';
 import { NavOptionsComponent } from './nav-options/nav-options.component';
-import { ApplyComponent } from './nav-options/apply/apply.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
@@ -26,7 +25,6 @@ const routes: Routes = [
     AccountsAccordionComponent,
     WithdrawDepositTransferComponent,
     NavOptionsComponent,
-    ApplyComponent,
     LoginComponent
   ],
   imports: [

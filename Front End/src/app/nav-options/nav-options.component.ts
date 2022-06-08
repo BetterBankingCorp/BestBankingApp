@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -8,9 +9,22 @@ import { ApiService } from '../api.service';
 })
 export class NavOptionsComponent implements OnInit {
 
-  constructor(public apiService : ApiService) { }
+  modalRef?: BsModalRef;
+
+  constructor(private modalService : BsModalService, public apiService : ApiService) { }
 
   ngOnInit(): void {
+  }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
+  }
+
+  closeModal() {
+    this.modalRef?.hide()
+    setTimeout( () => { 
+      this.apiService.getData() 
+    }, 300)
   }
 
   createAcc() {

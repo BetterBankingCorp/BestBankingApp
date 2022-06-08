@@ -1,1 +1,24 @@
-<h3>Apply</h3>
+<h3 class="apply btn" (click)="openModal(apply)">Apply</h3>
+<h3 class="mission btn"><a href="https://github.com/BetterBankingCorp/BestBankingApp#readme" target="_blank"> Our Mission</a></h3>
+ 
+<ng-template #apply>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Account Application</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <label for="first-name">First name:</label><br>
+    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
+    <label for="first-name">Last name:</label><br>
+    <input #lastName id="first-name" name="first-name" autocomplete="off"><br><br>
+    <label for="first-name">Social Security Number (SSN):</label><br>
+    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
+    <label for="first-name">First name:</label><br>
+    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
+    <label for="first-name">First name:</label><br>
+    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
+    <button (click)="closeModal()">Apply</button>
+  </div>
+</ng-template>
