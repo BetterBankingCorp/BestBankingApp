@@ -1,13 +1,9 @@
 .accordion {
     margin: auto;
-    margin-top: 65px;
+    padding-top: 70px;
     min-width: 850px;
     width: 75%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.accordion-info {
-    display: flex;
+    font-family:sans-serif;
 }
 
 .account-info {
@@ -17,4 +13,3 @@
     margin: 10px auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-

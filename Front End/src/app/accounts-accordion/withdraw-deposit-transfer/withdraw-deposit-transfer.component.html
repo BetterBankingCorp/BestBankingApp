@@ -8,7 +8,7 @@
     </button>
   </div>
   <div class="modal-body">
-    <p>Account number: {{currentAccountNum}}</p>
+    <p><span>Account:</span> {{currentAccountNum}}</p>
     <label for="withdraw-amount">Withdraw amount:</label><br>
     <input #withdrawAmt id="withdraw-amount" name="withdraw-amount" autocomplete="off"><br><br>
     <button (click)="withdrawAcc(getUserInputAmount(withdrawAmt.value))" (click)="closeModal()">OK</button>
@@ -25,7 +25,7 @@
     </button>
   </div>
   <div class="modal-body">
-    <p>Account number: {{currentAccountNum}}</p>
+    <p><span>Account:</span> {{currentAccountNum}}</p>
     <label for="deposit-amount">Deposit amount:</label><br>
     <input #depositAmt id="deposit-amount" name="deposit-amount" autocomplete="off"><br><br>
     <button (click)="depositAcc(getUserInputAmount(depositAmt.value))" (click)="closeModal()">OK</button>
@@ -53,6 +53,8 @@
 
     <label for="transfer-amount">Transfer amount:</label><br>
     <input #transferAmt id="transfer-amount" name="transfer-amount" autocomplete="off"><br><br>
+    <label for="memo">Memo:</label><br>
+    <textarea name="memo" id="memo" cols="30" rows="3"></textarea><br><br>
     <button (click)="transferAcc(getUserInputAmount(transferAmt.value), accountTo.value)" (click)="closeModal()">OK</button>
   </div>
 </ng-template>

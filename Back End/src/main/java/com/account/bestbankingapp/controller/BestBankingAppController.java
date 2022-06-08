@@ -40,9 +40,15 @@ public class BestBankingAppController {
 	}
 	
 	@CrossOrigin(origins = "*")
-	@RequestMapping(value="/accounts", method=RequestMethod.GET)
+	@RequestMapping(value="/accounts/all", method=RequestMethod.GET)
 	public List<Account> readAccounts() {
 	    return accountService.getAccounts();
+	}
+	
+	@CrossOrigin(origins = "*")
+	@GetMapping(value="/accounts")
+	public List<Account> readAccountsBySSN(@RequestBody String SSN) {
+	    return accountService.getAccountsBySSN(SSN);
 	}
 	
 	@CrossOrigin(origins = "*")

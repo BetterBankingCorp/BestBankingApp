@@ -1,5 +1,6 @@
+<div class="accordion-container">
 <accordion class="accordion">
-    <accordion-group heading="{{ account.accountNum }}" *ngFor="let account of apiService.accounts" [isOpen]="true" class="accordion-block">
+    <accordion-group heading="{{ account.accountNum }}" *ngFor="let account of apiService.accounts" [isOpen]="true">
         <div class="account-info">
             {{ account.balance | currency:'USD' }}
             <div class="buttons">
@@ -8,3 +9,4 @@
         </div>
     </accordion-group>
 </accordion>
+</div>
