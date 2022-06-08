@@ -8,13 +8,13 @@
   <br>
   Back End Architect- David Toribio
   <br>
-  Front End Architect- Raymond Harmerr
+  Front End Architect- Raymond Harmer
   <br>
   AWS/Full Stack Developer- Shane Cupid
   <br>
-  Full Stack Developer- Rehna 
+  Full Stack Developer- Rehna Anthru
   <br>
-  AWS/Quality Assurance/Full Stack Developer - Sushil
+  AWS/Quality Assurance/Full Stack Developer - Sushil Shrestha
   <br>
   Full Stack Developer- Bailey Patt
   
