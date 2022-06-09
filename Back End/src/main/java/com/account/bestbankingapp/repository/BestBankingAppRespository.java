@@ -11,6 +11,6 @@ import com.account.bestbankingapp.model.Account;
 
 @Repository
 public interface BestBankingAppRespository extends JpaRepository <Account, String>{
-	@Query(value="SELECT * FROM account a WHERE a.SSN = :SSN", nativeQuery=true)
-	public List<Account> findByName(@Param("SSN") String SSN);
+	@Query(value="SELECT * FROM account a WHERE a.member_id = :member_id AND a.password = :password", nativeQuery=true)
+	public List<Account> findByMemberIDAndPass(@Param("member_id") String SSN, @Param("password") String password);
 }

@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.account.bestbankingapp.model.Account;
@@ -47,8 +48,8 @@ public class BestBankingAppController {
 	
 	@CrossOrigin(origins = "*")
 	@GetMapping(value="/accounts")
-	public List<Account> readAccountsBySSN(@RequestBody String SSN) {
-	    return accountService.getAccountsBySSN(SSN);
+	public List<Account> readAccountsByMemberID(@RequestParam String memberID, @RequestParam String password) {
+	    return accountService.getAccountsByMemberID(memberID, password);
 	}
 	
 	@CrossOrigin(origins = "*")

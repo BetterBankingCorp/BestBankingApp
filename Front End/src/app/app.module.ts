@@ -12,11 +12,13 @@ import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 import { WithdrawDepositTransferComponent } from './accounts-accordion/withdraw-deposit-transfer/withdraw-deposit-transfer.component';
 import { NavOptionsComponent } from './nav-options/nav-options.component';
 import { LoginComponent } from './login/login.component';
+import { UserRegistration } from './user-registration.model';
+import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: 'accounts', component: AccountsAccordionComponent },
   { path: 'login', component: LoginComponent },
-  { path: '', redirectTo: '/accounts', pathMatch: 'full'}
+  { path: '', redirectTo: '/login', pathMatch: 'full'}
 ];
 
 @NgModule({
@@ -25,7 +27,7 @@ const routes: Routes = [
     AccountsAccordionComponent,
     WithdrawDepositTransferComponent,
     NavOptionsComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ const routes: Routes = [
     AccordionModule.forRoot(),
     HttpClientModule,
     ModalModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [BsModalService],
   bootstrap: [AppComponent]

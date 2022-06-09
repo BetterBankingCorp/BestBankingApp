@@ -19,12 +19,13 @@ public class BestBankingAppService {
 
 	//create savings account
 	public Savings createSavingsAccount(Savings savingsAccount) {
-		savingsAccount.setAccountNum("Savings-" + savingsAccount.getNextAccountNumber());
+		savingsAccount.setAccountNum("Savings - 1" + savingsAccount.setAccountNumber());
 		return accountRepository.save(savingsAccount);
 	}
 	//create checking account
 	public Checking createCheckingAccount(Checking checkingAccount) {
-		checkingAccount.setAccountNum("Checking-" + checkingAccount.getNextAccountNumber());
+		checkingAccount.setAccountNum("Checking - 2" + checkingAccount.setAccountNumber());
+		checkingAccount.setDebitCard();
 		return accountRepository.save(checkingAccount);
 	}
 	
@@ -33,8 +34,8 @@ public class BestBankingAppService {
 	    return accountRepository.findAll();
 	}
 	
-	public List<Account> getAccountsBySSN(String SSN) {
-		return accountRepository.findByName(SSN);
+	public List<Account> getAccountsByMemberID(String memberID, String password) {
+		return accountRepository.findByMemberIDAndPass(memberID, password);
 	}
 	//delete accounts
 	public void deleteAccount(String accountNum) {

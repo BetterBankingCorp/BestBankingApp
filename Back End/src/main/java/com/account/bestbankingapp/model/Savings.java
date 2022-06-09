@@ -14,15 +14,14 @@ public class Savings extends Account {
 	@Column(name = "safetyDepositBoxKey")
 	private int safetyDepositBoxKey;
 	
-	public Savings() {
-		
+	
+	public Savings(String name, String ssn, double balance, String memberId, String password) {
+		super(name, ssn, balance, memberId, password);
+		setSafetyDepositBox();
 	}
 	
-	public Savings(String name, String ssn, double balance, double rate, String accountNum, int safetyDepositBoxID,
-			int safetyDepositBoxKey) {
-		super(name, ssn, balance, rate, accountNum);
-		this.safetyDepositBoxID = safetyDepositBoxID;
-		this.safetyDepositBoxKey = safetyDepositBoxKey;
+	public Savings() {
+		
 	}
 
 	public int getSafetyDepositBoxID() {
@@ -41,6 +40,17 @@ public class Savings extends Account {
 		this.safetyDepositBoxKey = safetyDepositBoxKey;
 	}
 
+	@Override
+	public void setRate() {
+		rate = getBaseRate() - 0.25;
+	}
+	
+	//Randomizer to set safety deposit box numbers
+	private void setSafetyDepositBox() {
+		safetyDepositBoxID = (int) (Math.random() * Math.pow(10, 3));
+		safetyDepositBoxKey = (int) (Math.random() * Math.pow(10, 4));
+	}
+	
 	@Override
 	public String toString() {
 		return "Savings [safetyDepositBoxID=" + safetyDepositBoxID + ", safetyDepositBoxKey=" + safetyDepositBoxKey
