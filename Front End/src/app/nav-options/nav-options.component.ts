@@ -32,7 +32,7 @@ export class NavOptionsComponent implements OnInit {
   closeModal() {
     this.modalRef?.hide()
     setTimeout( () => { 
-      this.apiService.getData() 
+      this.apiService.getData(this.memberID, this.password) 
     }, 300)
   }
 
