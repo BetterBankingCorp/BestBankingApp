@@ -8,20 +8,20 @@
   <br>
   Back End Architect- David Toribio
   <br>
-  Front End Architect- Raymond Harmerr
+  Front End Architect- Raymond Harmer
   <br>
-  AWS/Full Stack Developer- Shane Cupid
+  DevOps/Quality Assurance Tester- Shane Cupid
   <br>
-  Full Stack Developer- Rehna 
+  Back End Architect- Rehna Anthru
   <br>
-  AWS/Quality Assurance/Full Stack Developer - Sushil
+  DevOps- Sushil Shrestha
   <br>
   Full Stack Developer- Bailey Patt
   
   
   <h1> Project Rundown: </h1>
   
-  Welcome to Better Banking Corp! Our sophisticated system allows our customers to complete basic banking functions such as withdraw, deposit, retrieve balance and more!
+  Welcome to Better Banking Corp! Our sophisticated system allows our customers to complete banking functions such as withdraw, deposit, retrieve balance and more!
  
   <h1> Project Tools: </h1>
   
@@ -29,9 +29,13 @@
   <br>
   Spring Initializer
   <br>
-  VSCode
+  VS Code
   <br>
   MySQL
+  <br>
+  AWS
+  <br>
+  PostMan
   
   <h1> Programming Languages: </h1>
   
@@ -90,10 +94,10 @@
   Transfer feature implementation logic added <br>
   
   <h2> Day Seven: </h2>
-  *Front End Design <br>
+  Front End Design <br>
   
   <h2> Day Eight: </h2>
-  *Presentation Creation and Practice <br>
+  Presentation Creation and Practice <br>
   
   
   </body>

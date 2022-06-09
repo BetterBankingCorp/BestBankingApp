@@ -19,6 +19,7 @@ import com.account.bestbankingapp.model.Checking;
 import com.account.bestbankingapp.model.Savings;
 import com.account.bestbankingapp.repository.BestBankingAppRespository;
 
+
 @SpringBootTest
 @TestMethodOrder(OrderAnnotation.class)
 class BankApplicationTests {
