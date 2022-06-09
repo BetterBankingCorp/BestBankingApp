@@ -10,6 +10,12 @@ a {
     margin-right: 0;
 }
 
+.account-type {
+align-items: center;
+padding-right: 40px;
+right: 50px;
+}
+
 .btn {
     font-size: 24px;
     border: none;
@@ -25,10 +31,19 @@ a {
     font-weight: 800;
 }
 
+#apply {
+    margin-bottom: 2000px;
+}
 .apply {
     width: 100px;
 }
 
 .mission {
     width: 165px;
+}
+
+.modal-body {
+    display: block;
+    justify-content: center;
+    margin: auto;
 }

@@ -1,7 +1,7 @@
 <h3 class="apply btn" (click)="openModal(apply)">Apply</h3>
 <h3 class="mission btn"><a href="https://github.com/BetterBankingCorp/BestBankingApp#readme" target="_blank"> Our Mission</a></h3>
  
-<ng-template #apply>
+<ng-template #apply id="apply">
   <div class="modal-header">
     <h4 class="modal-title pull-left">Account Application</h4>
     <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
@@ -9,16 +9,40 @@
     </button>
   </div>
   <div class="modal-body">
+    <label for="account-type">Account Type: 
+      <div class="account-type">
+      <label for="checking">Checking: </label> 
+      <input #checking id="checking" name="account-type" type="radio" value="checking" [ngModel]="accountType" (change)="setRadioValue(checking.value)">
+      <label for="savings">Savings: </label> 
+      <input #savings id="savings" name="account-type" type="radio" value="savings" [ngModel]="accountType" (change)="setRadioValue(savings.value)"> 
+      </div>
+    </label><br><br>
     <label for="first-name">First name:</label><br>
-    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
-    <label for="first-name">Last name:</label><br>
-    <input #lastName id="first-name" name="first-name" autocomplete="off"><br><br>
-    <label for="first-name">Social Security Number (SSN):</label><br>
-    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
-    <label for="first-name">First name:</label><br>
-    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
-    <label for="first-name">First name:</label><br>
-    <input #firstName id="first-name" name="first-name" autocomplete="off"><br><br>
-    <button (click)="closeModal()">Apply</button>
+    <input #firstName id="first-name" name="first-name" autocomplete="off" (ngModel)="userPostAcc"><br><br>
+    <label for="last-name">Last name:</label><br>
+    <input #lastName id="last-name" name="last-name" autocomplete="off"><br><br>
+    <label for="SSN">Social Security Number (SSN):</label><br>
+    <input #SSN id="SSN" name="SSN" autocomplete="off" type="password"><br><br>
+    <label for="password">Password:</label><br>
+    <input #password id="password" name="password" autocomplete="off" type="password"><br><br>
+    <button (click)="closeModal()" (click)="openModal(newAccSuccess)" (click)="createAcc(firstName.value, lastName.value, SSN.value, password.value, accountType)">Apply</button>
   </div>
+</ng-template>
+
+<ng-template #newAccSuccess>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Application Success!</h4>
+    <button type="button" class="btn-close close pull-right" aria-label="Close" (click)="modalRef?.hide()">
+      <span aria-hidden="true" class="visually-hidden">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>For login purposes, please note the credentials below for your records. Your member ID will act as a username to access accounts on login.</p><br>
+
+    <p>Member ID: {{ this.memberID }} </p>
+    <p>Password: {{ this.password }} </p>
+    
+    <button (click)="closeModal()">OK</button>
+  </div>
+
 </ng-template>

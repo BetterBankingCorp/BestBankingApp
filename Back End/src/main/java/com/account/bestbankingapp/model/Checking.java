@@ -15,18 +15,15 @@ public class Checking extends Account {
 		@Column(name = "debitCardNumber")
 		private long debitCardNumber;
 		@Column(name = "debitCardPin")
-		private int debitCardPin;
+		private int debitCardPIN;
 		
-		public Checking() {
-			
+		
+		
+		public Checking(String name, String ssn, double balance, String memberId, String password) {
+			super(name, ssn, balance, memberId, password);
 		}
 		
-		public Checking(String name, String ssn, double balance, double rate, String accountNum, long debitCardNumber,
-				int debitCardPin) {
-			super(name, ssn, balance, rate, accountNum);
-			this.debitCardNumber = debitCardNumber;
-			this.debitCardPin = debitCardPin;
-		}
+		public Checking() { }
 
 		public long getDebitCardNumber() {
 			return debitCardNumber;
@@ -35,18 +32,28 @@ public class Checking extends Account {
 		public void setDebitCardNumber(long debitCardNumber) {
 			this.debitCardNumber = debitCardNumber;
 		}
+		
+		public void setDebitCard() {
+			debitCardNumber = (long) (Math.random() * Math.pow(10, 12));
+			debitCardPIN = (int) (Math.random() * Math.pow(10, 4));
+		}
 
 		public int getDebitCardPin() {
-			return debitCardPin;
+			return debitCardPIN;
 		}
 
 		public void setDebitCardPin(int debitCardPin) {
-			this.debitCardPin = debitCardPin;
+			this.debitCardPIN = debitCardPin;
+		}
+		
+		@Override
+		public void setRate() {
+			rate = getBaseRate() * 0.15;
 		}
 
 		@Override
 		public String toString() {
-			return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPin + ", rate=" + rate
+			return "Checking [debitCardNumber=" + debitCardNumber + ", debitCardPin=" + debitCardPIN + ", rate=" + rate
 					+ ", accountNum=" + accountNum + "]";
 		}
 		

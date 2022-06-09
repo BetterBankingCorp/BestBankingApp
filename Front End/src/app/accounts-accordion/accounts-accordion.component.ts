@@ -13,14 +13,6 @@ export class AccountsAccordionComponent implements OnInit {
   constructor(public apiService : ApiService) { }
 
   ngOnInit(): void {
-    try {
-      this.apiService.getData();
-    } catch(error) {
-      console.log(error);
-    }
   }
 
-  yes(info : any) {
-    console.log(info)
-  }
 }

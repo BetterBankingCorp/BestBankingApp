@@ -47,8 +47,8 @@
     <input list="available-accounts" id="accounts-dropdown" name="account-choice" #accountTo>
     <br>
 
-    <datalist id="available-accounts">
-        <option *ngFor="let account of apiService.accounts" [value]="account.accountNum">
+    <datalist id="available-accounts" aria-autocomplete="none">
+        <option *ngFor="let account of apiService.accounts" [value]="account.accountNum" >
     </datalist><br>
 
     <label for="transfer-amount">Transfer amount:</label><br>
